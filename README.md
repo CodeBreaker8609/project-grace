@@ -97,7 +97,7 @@ This project helped me develop:
 
 ## 📸 Screenshots
 
-*(Add screenshots here once uploaded)*
+![full-screenshot](assets/full-screenshot.png)
 
 ---
 
