@@ -97,7 +97,7 @@ This project helped me develop:
 
 ## 📸 Screenshots
 
-![full-screenshot](assets/full-screenshot.png)
+![full-screenshot](https://github.com/CodeBreaker8609/project-grace/blob/main/assets/full-screenshot.png)
 
 ---
 
