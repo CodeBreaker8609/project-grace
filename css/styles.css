@@ -1,0 +1,388 @@
+:root {
+    --grace-bg: #f6f7fb;
+    --grace-surface: #ffffff;
+    --grace-surface-soft: #eef2f7;
+    --grace-text: #1f2937;
+    --grace-text-soft: #6b7280;
+    --grace-border: #dbe1ea;
+
+    --grace-primary: #5b6cff;
+    --grace-primary-hover: #4959e0;
+    --grace-primary-soft: #e8ebff;
+
+    --grace-accent: #4c956c;
+    --grace-accent-soft: #e7f5ec;
+
+    --grace-warm: #c0841a;
+    --grace-warm-soft: #fff4db;
+
+    --grace-danger: #c75c5c;
+    --grace-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    --grace-radius-lg: 1.5rem;
+    --grace-radius-md: 1rem;
+    --grace-transition: all 0.25s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--grace-bg);
+    color: var(--grace-text);
+    line-height: 1.6;
+}
+
+/* ========================
+   Global Helpers
+======================== */
+
+.section-padding {
+    padding: 5rem 0;
+}
+
+.py-lg-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.section-eyebrow {
+    background-color: var(--grace-primary-soft);
+    color: var(--grace-primary);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.45rem 0.85rem;
+    border-radius: 999px;
+}
+
+.card-label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--grace-text-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.text-muted {
+    color: var(--grace-text-soft) !important;
+}
+
+/* ========================
+   Navbar
+======================== */
+
+.site-header {
+    backdrop-filter: blur(14px);
+}
+
+.grace-navbar {
+    background: rgba(246, 247, 251, 0.88);
+    border-bottom: 1px solid rgba(219, 225, 234, 0.7);
+}
+
+.navbar-brand {
+    color: var(--grace-text);
+    letter-spacing: -0.03em;
+}
+
+.navbar-brand:hover {
+    color: var(--grace-primary);
+}
+
+.nav-link {
+    color: var(--grace-text-soft);
+    font-weight: 600;
+    transition: var(--grace-transition);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--grace-primary);
+}
+
+/* ========================
+   Buttons
+======================== */
+
+.btn {
+    font-weight: 600;
+    transition: var(--grace-transition);
+    border: none;
+}
+
+.btn-grace-primary {
+    background-color: var(--grace-primary);
+    color: #ffffff;
+    box-shadow: 0 10px 20px rgba(91, 108, 255, 0.2);
+}
+
+.btn-grace-primary:hover,
+.btn-grace-primary:focus {
+    background-color: var(--grace-primary-hover);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.btn-grace-secondary {
+    background-color: var(--grace-surface);
+    color: var(--grace-text);
+    border: 1px solid var(--grace-border);
+}
+
+.btn-grace-secondary:hover,
+.btn-grace-secondary:focus {
+    background-color: var(--grace-surface-soft);
+    color: var(--grace-text);
+    transform: translateY(-1px);
+}
+
+/* ========================
+   Hero
+======================== */
+
+.hero-section {
+    background:
+        radial-gradient(circle at top right, rgba(91, 108, 255, 0.08), transparent 25%),
+        radial-gradient(circle at bottom left, rgba(76, 149, 108, 0.08), transparent 20%),
+        var(--grace-bg);
+}
+
+.hero-title {
+    color: var(--grace-text);
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    max-width: 12ch;
+}
+
+.hero-text {
+    max-width: 42rem;
+    color: var(--grace-text-soft);
+}
+
+.grace-panel {
+    background: linear-gradient(180deg, #ffffff 0%, #f8faff 100%);
+    border-radius: var(--grace-radius-lg);
+    box-shadow: var(--grace-shadow);
+}
+
+.focus-dot {
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: var(--grace-primary);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* ========================
+   Cards
+======================== */
+
+.grace-card {
+    background-color: var(--grace-surface);
+    border-radius: var(--grace-radius-lg);
+    box-shadow: var(--grace-shadow);
+    transition: var(--grace-transition);
+}
+
+.grace-card:hover {
+    transform: translateY(-3px);
+}
+
+.grace-card-accent {
+    background: linear-gradient(180deg, #ffffff 0%, #f6f9ff 100%);
+}
+
+.section-heading h2,
+.card h3,
+.card h4 {
+    letter-spacing: -0.03em;
+}
+
+/* ========================
+   Forms
+======================== */
+
+.form-label {
+    color: var(--grace-text);
+    margin-bottom: 0.65rem;
+}
+
+.form-control,
+.form-select {
+    border: 1px solid var(--grace-border);
+    border-radius: 1rem;
+    padding: 0.9rem 1rem;
+    color: var(--grace-text);
+    background-color: #ffffff;
+    box-shadow: none;
+    transition: var(--grace-transition);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: rgba(91, 108, 255, 0.55);
+    box-shadow: 0 0 0 0.25rem rgba(91, 108, 255, 0.12);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-range {
+    cursor: pointer;
+}
+
+.form-range::-webkit-slider-thumb {
+    background: var(--grace-primary);
+}
+
+.form-range::-moz-range-thumb {
+    background: var(--grace-primary);
+    border: none;
+}
+
+.range-badge {
+    min-width: 3rem;
+    text-align: center;
+    background-color: var(--grace-primary-soft);
+    color: var(--grace-primary);
+    font-weight: 700;
+    padding: 0.45rem 0.75rem;
+    border-radius: 999px;
+}
+
+/* ========================
+   Result / Message Boxes
+======================== */
+
+.result-box,
+.encouragement-box {
+    background-color: var(--grace-surface-soft);
+    border: 1px solid var(--grace-border);
+    border-radius: 1.25rem;
+    padding: 1rem 1.1rem;
+    color: var(--grace-text);
+}
+
+.encouragement-box {
+    background: linear-gradient(180deg, #f8faff 0%, #edf2ff 100%);
+    font-weight: 600;
+}
+
+/* ========================
+   Money List
+======================== */
+
+.money-list {
+    gap: 0.75rem;
+    display: grid;
+}
+
+.money-list .list-group-item {
+    border: 1px solid var(--grace-border) !important;
+    padding: 1rem 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(15, 23, 42, 0.04);
+}
+
+.empty-state {
+    background-color: var(--grace-surface-soft) !important;
+    color: var(--grace-text-soft);
+}
+
+/* ========================
+   Footer
+======================== */
+
+.site-footer {
+    border-top: 1px solid var(--grace-border);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* ========================
+   Responsive
+======================== */
+
+@media (max-width: 991.98px) {
+    .section-padding {
+        padding: 4rem 0;
+    }
+
+    .hero-title {
+        max-width: 100%;
+    }
+
+    .navbar-collapse {
+        background-color: rgba(246, 247, 251, 0.98);
+        padding: 1rem 0;
+        margin-top: 1rem;
+        border-radius: 1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    body {
+        font-size: 0.98rem;
+    }
+
+    .section-padding {
+        padding: 3.5rem 0;
+    }
+
+    .hero-section {
+        padding-top: 2rem;
+    }
+
+    .card-body {
+        padding: 1.5rem !important;
+    }
+
+    .btn-grace-primary,
+    .btn-grace-secondary {
+        width: 100%;
+    }
+}
+
+.result-box,
+.encouragement-box {
+    transition: opacity 0.25s ease, transform 0.25s ease, border-color 0.25s ease,
+        background-color 0.25s ease, color 0.25s ease;
+}
+
+.result-box.is-visible,
+.encouragement-box.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.result-box:not(.is-visible),
+.encouragement-box:not(.is-visible) {
+    opacity: 0.85;
+    transform: translateY(4px);
+}
+
+/* ========================
+   Validation States
+======================== */
+
+.result-box.success {
+    border: 1px solid #4c956c;
+    background-color: #e7f5ec;
+    color: #2f6b4f;
+}
+
+.result-box.error {
+    border: 1px solid #c75c5c;
+    background-color: #fdeaea;
+    color: #8a2d2d;
+}
+
+.result-box.warning {
+    border: 1px solid #c0841a;
+    background-color: #fff4db;
+    color: #7a5a1a;
+}
