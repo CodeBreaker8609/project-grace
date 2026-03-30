@@ -103,7 +103,7 @@ This project helped me develop:
 
 ## 🔗 Live Demo
 
-*(Add GitHub Pages or Netlify link here)*
+[*(Add GitHub Pages or Netlify link here)*](https://codebreaker8609.github.io/project-grace/)
 
 ---
 
